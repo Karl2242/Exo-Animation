@@ -1,0 +1,162 @@
+/*// BASE STYLES //*/
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  .grass, .sky, .road{
+    position: relative;
+  }
+  .sky{
+    height: 40%;
+    background-color: skyblue;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,.33))
+  }
+  .grass{
+    height: 30%;
+    background-color: seagreen;
+    background-image: linear-gradient(to top, rgba(255,255,255,0) 75%, rgba(255,255,255,.25))
+  }
+  .road{
+    height: 30%;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+  }
+  /*// ELEMENTS TO ANIMATE //*/
+  .mario{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: 5;
+    animation: drive 3.2s linear infinite;
+  }
+  .luigi{
+    position: absolute;
+    top: 95px;
+    left: -50px;
+    z-index: 55;
+    animation: drive-luigi 5s linear infinite;
+  }
+  .cloud{
+    position: absolute;
+    top: 120px;
+    left: 0;
+  }
+  .cloud2{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    max-width: 200px;
+  }
+  .cloud,
+  .cloud2{
+    animation-name: ;
+    animation-duration:;
+    animation-direction: ;
+    animation-fill-mode: ;
+    animation-delay: ;
+    animation-timing-function: ;
+    animation-iteration-count: ;
+  }
+  .lines{
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0px;
+    width: 60000px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    animation: lines-move 4s linear infinite;
+  }
+
+.nadirjtm{
+    width: 4%;
+    left: 1000px;
+    top: 60px;
+    position: absolute;
+    z-index: 2;
+    animation: nadiradieu 3.5s linear infinite;
+}
+
+  /*// KEYFRAMES //*/
+  @keyframes drive {
+    0%{
+      left: 0px;
+    }
+    45%{
+        top: 8px;
+    }
+
+46%{
+    top: -70px;
+}
+59%{
+    top: 8px;
+}
+
+    100%{
+        left: 2000px;
+    }
+  }
+  @keyframes mario-jump {
+    0%{
+      
+    }
+    48% {
+    }
+    50% {
+    }
+    52% {
+    }
+    100%{
+      
+    }
+  }
+  @keyframes cloud-move {
+    0%{
+      
+    }
+    
+    100%{
+    }
+  }
+  @keyframes lines-move {
+  
+    0%{
+left: 0px;
+    }
+
+    100%{
+left: -900px;
+    }
+
+  }
+  @keyframes drive-luigi {
+    0%{
+      left: 0px;
+    }
+    100%{
+        left: 2000px;
+    }
+  }
+
+
+@keyframes nadiradieu {
+    
+0%{
+    left: 1700px;
+}
+
+50%{
+    left: 1000px;
+}
+
+100%{
+    left: 0px;
+}
+
+}

@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+  div {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+  }
+  div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+.animation{
+animation: monanim 2s linear infinite;
+}
+
+
+.animation:hover{
+    filter: blur(2px);
+    
+}
+
+@keyframes monanim {
+
+from{
+    transform: scale(1) rotate(0deg);
+}
+
+to{
+    transform: scale(2) rotate(20deg);
+}
+
+}
